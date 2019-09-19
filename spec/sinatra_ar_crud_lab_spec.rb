@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 describe "Magazine App" do
   let(:article_title) { "Hello World" }
@@ -7,6 +8,7 @@ describe "Magazine App" do
   before do
     @article1 = Article.create(:title => article_title, :content => article_content)
     @article2 = Article.create(:title => "second article", :content => "I'm a really good writer")
+
   end
 
   describe "Create Action" do
